@@ -8,10 +8,10 @@ const Registration = () => {
 
   const [formData, setFormData] = useState({
     id: Date.now(),
-    name: "Dew Hunt",
-    userName: "dewhunt",
-    email: "dew.fog1553@gmail.com",
-    password: "12345",
+    name: "",
+    userName: "",
+    email: "",
+    password: "",
     verificationCode: randomNumber(),
     isVerified: false,
   });
