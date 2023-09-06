@@ -21,7 +21,7 @@ export async function GET(request, response) {
   } catch (error) {
     return NextResponse.json({
       status: false,
-      userInfo: payload,
+      userInfo: "",
       message: "Verified user not found.",
     });
   }
