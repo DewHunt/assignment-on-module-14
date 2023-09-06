@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 const Dashboard = () => {
@@ -9,9 +8,7 @@ const Dashboard = () => {
     (async () => {
       const result = await fetch("api/dashboard");
       const jsonResult = await result.json();
-      console.log("jsonResult: ", jsonResult.userInfo);
       setUserInfo(jsonResult.userInfo);
-      console.log("userInfo: ", userInfo);
     })();
   }, []);
 
