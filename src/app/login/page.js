@@ -3,8 +3,8 @@ import { useState } from "react";
 
 const Login = () => {
   const [formData, setFormData] = useState({
-    email: "example@gmail.com",
-    password: "12345",
+    email: "",
+    password: "",
   });
   const [isFailed, setIsFailed] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");

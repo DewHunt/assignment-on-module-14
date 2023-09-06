@@ -24,6 +24,7 @@ const Registration = () => {
     e.preventDefault();
     await handleChange("id", Date.now());
     await handleChange("verificationCode", randomNumber());
+    await localStorage.setItem("userInfo", JSON.stringify(formData));
 
     const registrationResponse = await fetch("api/registration", {
       method: "POST",
